@@ -165,5 +165,87 @@
     </main>
 
     <script src="galleryjs.js"></script>
+    <nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">Astro Innovators</a>
+        
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="index1.html">Planets <strong>Motion</strong></a></li>
+            <li><a href="/moons-galaxy">Moons & Galaxy</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">About NASA</a></li>
+        </ul>
+    </div>
+</nav>
+<style>
+:root {
+    --space-blue: #2A2A72;
+    --star-white: #E0E0E0;
+    --accent-blue: #4A90E2;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    
+    background-color: rgba(0, 0, 0, 0.6); 
+
+    padding: 15px 0;
+  
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: var(--star-white);
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+
+    letter-spacing: 1px; 
+    text-shadow: 0 0 8px var(--accent-blue);
+}
+
+
+.nav-links {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-links li {
+    margin-left: 30px; 
+}
+
+.nav-links li a {
+    color: var(--star-white);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, text-shadow 0.3s; 
+}
+.nav-links li a:hover {
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px var(--accent-blue);
+}</style>
 </body>
 </html>
